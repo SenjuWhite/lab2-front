@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.traffic-light {
+    width: 100px;
+    height: 250px;
+    background-color: #808080;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+/* Position-based traffic light */
+.position-based {
+    position: relative;
+}
+
+.position-based .red {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-color: red;
+}
+
+.position-based .yellow {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    background-color: yellow;
+}
+
+.position-based .green {
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    background-color: green;
+}
+
+.transform-based {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transform-based .red {
+    transform: translateY(0);
+    background-color: red;
+}
+
+.transform-based .yellow {
+    transform: translateY(10px);
+    background-color: yellow;
+}
+
+.transform-based .green {
+    transform: translateY(20px);
+    background-color: green;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+}
